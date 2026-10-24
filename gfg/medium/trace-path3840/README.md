@@ -1,10 +1,18 @@
-# trace-path3840
+# Trace Path
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-yellow)
 
 ## Problem
 
-_Description not available._
+Given a rectangular grid with n rows and m columns, and a string s representing a sequence of movement commands. Geek can start from any cell of the grid and follows all the commands in s in the same order.
+
+The string s consists only of the characters L, R, D, and U, where:
+
+L: Move one cell left, from (i, j) to (i, j - 1).
+R: Move one cell right, from (i, j) to (i, j + 1).
+D: Move one cell up, from (i, j) to (i - 1, j).
+U: Move one cell down, from (i, j) to (i + 1, j).
+Determine whether there exists at least one starting cell such that Geek remains within the grid while following all the commands in s.
 
 ## Solution
 
