@@ -12,7 +12,7 @@ class Solution:
         ans, mst, used = 0, 1, 0
         for m in range(min(r, n) + 1):
             used += cnt[m]
-            if m >= l:                      # changed: 1 -> l
+            if m >= l:                      
                 ans = (ans + mst * pow2[n - used]) % MOD
             mst = mst * (pow2[cnt[m]] - 1) % MOD
             if mst == 0:
