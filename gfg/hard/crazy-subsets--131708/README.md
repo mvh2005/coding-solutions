@@ -33,7 +33,7 @@ Explanation: The subsets whose MEX lies in the range [1, 2] are [0] (MEX = 1), [
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-30T10:02:59.224Z  
+**Submitted:** 2026-10-30T10:03:22.706Z  
 
 ```py
 class Solution:
@@ -50,7 +50,7 @@ class Solution:
         ans, mst, used = 0, 1, 0
         for m in range(min(r, n) + 1):
             used += cnt[m]
-            if m >= l:                      # changed: 1 -> l
+            if m >= l:                      
                 ans = (ans + mst * pow2[n - used]) % MOD
             mst = mst * (pow2[cnt[m]] - 1) % MOD
             if mst == 0:
